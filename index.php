@@ -107,10 +107,9 @@ if(!$_SESSION["login"]["logged_in"]) {
         <h1>Picture Heaven</h1>
         <p>Do your worst...</p>
       </div>
-      <div class="row">
-      	
-      	
-      	<?php
+    </div>
+    <div class="container">
+        <?php
 			$path = 'pages/';
 			if(isset($_GET['page']) && !empty($_GET['page'])) {
 				if(file_exists($path . $_GET['page']) . '.php') {
@@ -119,11 +118,7 @@ if(!$_SESSION["login"]["logged_in"]) {
 			}
 			
 		?>
-      	
-      	
-      </div>	
-
-    </div> <!-- /container -->
+    </div>
 
 
     <script>
