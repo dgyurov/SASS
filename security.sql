@@ -111,9 +111,9 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `password`) VALUES
-(101, 'dvid@itu.dk', '1234'),
-(102, 'dimi@itu.dk', '1234'),
-(103, 'mares@itu.dk', '1234');
+(101, 'dvid@itu.dk', '$2y$11$LcUN.anJNw0s5.K/KznnE.0VJd0oCl7Qh/eBMfStz4sxxx2SlxqQu'),
+(102, 'dimi@itu.dk', '$2y$11$LcUN.anJNw0s5.K/KznnE.0VJd0oCl7Qh/eBMfStz4sxxx2SlxqQu'),
+(103, 'mares@itu.dk', '$2y$11$LcUN.anJNw0s5.K/KznnE.0VJd0oCl7Qh/eBMfStz4sxxx2SlxqQu');
 
 --
 -- Begrænsninger for dumpede tabeller
