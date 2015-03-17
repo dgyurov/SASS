@@ -74,6 +74,28 @@ class Qry {
         public function close_connection($con){
                 $con->close();
         }
+
+        public static function create_user($email,$password){
+            $legit = false;
+            $con = new self();
+            $options = [
+                'cost' => 11,
+            ];
+
+            $stmt = $con->connection->prepare("INSERT INTO `users` (`email`, `password`) VALUES (?, ?);");
+            // Convert password to hash using bcrypt
+            $hash = password_hash($password, PASSWORD_BCRYPT, $options);
+            
+             // "ss" means the database expects two strings
+            $stmt->bind_param("ss", $email, $hash);
+
+            if ($stmt->execute()) {
+                $legit = true;
+            }
+
+            $stmt->close();
+            return $legit;
+        }
         
 }
 

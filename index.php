@@ -5,20 +5,31 @@ session_start();
 
 
 if(isset($_POST['submit'])) {
-	if(isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['password']) && !empty($_POST['password'])) {
+  if(isset($_POST['email-signup']) && !empty($_POST['email-signup']) && isset($_POST['password-signup']) && !empty($_POST['password-signup'])) {
+    $email = trim($_POST['email-signup']);
+    $password = trim($_POST['password-signup']);
+    
+    include_once('backend/Qry.php');
+    $result = Qry::create_user($email,$password);
+  }	
+
+  if(isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['password']) && !empty($_POST['password'])) {
 		$email = trim($_POST['email']);
 		$password = trim($_POST['password']);
-		
-		include_once('backend/Qry.php');
-		$result = Qry::q('SELECT id FROM users WHERE email="'.$email.'" AND password="'.$password.'"');
 
-		if($result) {
-			$_SESSION["login"] = [ "logged_in" => TRUE, "email" => $email, "id" => $result[0]['id'] ];
-		} else {
-			header("Location: logout.php");
-			die;
-		}
+    include_once('backend/Qry.php');
+    $resultTEST = Qry::q('SELECT id, email, password FROM users WHERE email="'.$email.'"');
+    $hashedPassFromDB = $resultTEST[0]['password'];
+
+    if (password_verify($password, $hashedPassFromDB)) {
+        $_SESSION["login"] = [ "logged_in" => TRUE, "email" => $email, "id" => $result[0]['id'] ];
+    } else {
+        $_SESSION["wrongpass"] = true; 
+        header("Location: logout.php");
+        die;
+    }
 	}
+
 }
 
 // Check if user logged in

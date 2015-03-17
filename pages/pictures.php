@@ -21,7 +21,6 @@
       	// Get pictures from database based on username stored in the session.
       	
       	include_once('backend/Qry.php');
-		
 		$myPictures = Qry::q('SELECT id, picture FROM pictures WHERE owner_id=' . $_SESSION["login"]['id']);
       	
 		/*

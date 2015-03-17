@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Login to Securitay</title>
+    <title>Signup to Securitay</title>
 
     <!-- Bootstrap core CSS -->
       <link rel="stylesheet" href="resources/style/bootstrap.min.css">
@@ -54,12 +54,6 @@
 		  border-top-left-radius: 0;
 		  border-top-right-radius: 0;
 		}
-
-		.signup-message{
-			font-size: 14px;
-			font-weight: bold;
-		}
-
 		.container{
 			text-align: center;
 		}
@@ -77,13 +71,13 @@
     <div class="container">
 
       <form class="form-signin" action="index.php" method="post">
-        <h2 class="form-signin-heading">Please sign in</h2>
+        <h2 class="form-signin-heading">Sign up for free!</h2>
         <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" name="email" id="email" class="form-control" placeholder="Email address" required autofocus>
+        <input type="email" name="email-signup" id="email-signup" class="form-control" placeholder="Email address" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
-		<a href="signup.php" class="signup-message">You don't have an account yet? Create one!</a>
-        <button class="btn btn-lg btn-success btn-block" type="submit" name="submit">Login</button>
+        <input type="password" name="password-signup" id="password-signup" class="form-control" placeholder="Password" required>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Sign up</button>
       </form>
 
     </div> <!-- /container -->
