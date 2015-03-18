@@ -78,7 +78,6 @@ if(!$_SESSION["login"]["logged_in"]) {
     
     <script src="resources/js/jquery.min.js"></script>
 	<script src="resources/js/bootstrap.min.js"></script>
-	<script src="resources/js/lightbox.min.js"></script>
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -129,7 +128,7 @@ if(!$_SESSION["login"]["logged_in"]) {
     <script>
 		$(function() {
 			$(document).ready(function() {
-				$(".saved").delay(3200).slideUp();
+				$(".saved").delay(5000).slideUp();
 			});
 		});
 	</script>
