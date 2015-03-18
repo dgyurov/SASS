@@ -82,7 +82,7 @@
         <input type="email" name="email" id="email" class="form-control" placeholder="Email address" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
-		<a href="signup.php" class="signup-message">You don't have an account yet? Create one!</a>
+		<a href="signup.php" class="signup-message">You don't have an account yet?</a>
         <button class="btn btn-lg btn-success btn-block" type="submit" name="submit">Login</button>
       </form>
 

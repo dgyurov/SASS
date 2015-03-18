@@ -1,5 +1,5 @@
 <?php
-error_reporting(0); // add this before handin
+//error_reporting(0); // add this before handin
 
 session_start();
 
@@ -17,19 +17,18 @@ if(isset($_POST['submit'])) {
 		$email = trim($_POST['email']);
 		$password = trim($_POST['password']);
 
-    include_once('backend/Qry.php');
-    $resultTEST = Qry::q('SELECT id, email, password FROM users WHERE email="'.$email.'"');
-    $hashedPassFromDB = $resultTEST[0]['password'];
+        include_once('backend/Qry.php');
+        $result = Qry::q('SELECT id, email, password FROM users WHERE email="'.$email.'"');
+        $hashedPassFromDB = $result[0]['password'];
 
-    if (password_verify($password, $hashedPassFromDB)) {
-        $_SESSION["login"] = [ "logged_in" => TRUE, "email" => $email, "id" => $result[0]['id'] ];
-    } else {
-        $_SESSION["wrongpass"] = true; 
-        header("Location: logout.php");
-        die;
-    }
+        if (password_verify($password, $hashedPassFromDB)) {
+            $_SESSION["login"] = [ "logged_in" => TRUE, "email" => $email, "id" => $result[0]['id'] ];
+        } else {
+            $_SESSION["wrongpass"] = true;
+            header("Location: logout.php");
+            die;
+        }
 	}
-
 }
 
 // Check if user logged in
@@ -99,13 +98,13 @@ if(!$_SESSION["login"]["logged_in"]) {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Security course</a>
+          <a class="navbar-brand" href="#">SAS</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.php">Home</a></li>
-            <li><a href="index.php?page=pictures">Pictures</a></li>
-            <li><a href="index.php?page=upload">Upload</a></li>
+            <li><a href="index.php?page=pictures">Picture gallery</a></li>
+            <li><a href="index.php?page=upload">Upload picture</a></li>
             <li><a href="logout.php">Log out (<?php echo $_SESSION['login']['email'] ?>)</a></li>
           </ul>
         </div>
@@ -113,36 +112,30 @@ if(!$_SESSION["login"]["logged_in"]) {
     </nav><!-- Fixed navbar END -->
 
     <div class="container">
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Picture Heaven</h1>
-        <p>Do your worst...</p>
-      </div>
-      <div class="row">
-      	
-      	
-      	<?php
-			$path = 'pages/';
-			if(isset($_GET['page']) && !empty($_GET['page'])) {
-				if(file_exists($path . $_GET['page']) . '.php') {
-					include_once($path . $_GET['page'] . '.php');
-				}
-			}
-			
-		?>
-      	
-      	
-      </div>	
-
-    </div> <!-- /container -->
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <h1>Picture Heaven</h1>
+            <p>Do your worst...</p>
+        </div>
+    </div>
+    <div class="container">
+        <?php
+        $path = 'pages/';
+        if(isset($_GET['page']) && !empty($_GET['page'])) {
+            if(file_exists($path . $_GET['page']) . '.php') {
+                include_once($path . $_GET['page'] . '.php');
+            }
+        } else {
+            include_once('pages/home.php');
+        }
+        ?>
+    </div>
 
 
     <script>
 		$(function() {
 			$(document).ready(function() {
-				
 				$(".saved").delay(3200).slideUp();
-		
 			});
 		});
 	</script>
