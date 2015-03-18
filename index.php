@@ -1,5 +1,5 @@
 <?php
-error_reporting(0); // add this before handin
+//error_reporting(0); // add this before handin
 
 session_start();
 
@@ -116,7 +116,6 @@ if(!$_SESSION["login"]["logged_in"]) {
 					include_once($path . $_GET['page'] . '.php');
 				}
 			}
-			
 		?>
     </div>
 
@@ -124,9 +123,7 @@ if(!$_SESSION["login"]["logged_in"]) {
     <script>
 		$(function() {
 			$(document).ready(function() {
-				
 				$(".saved").delay(3200).slideUp();
-		
 			});
 		});
 	</script>

@@ -6,7 +6,7 @@
  * */
 
 $target_dir = "uploads/";
-$file_name = time() . basename($_FILES["fileToUpload"]["name"]);
+$file_name = md5(time()) . basename($_FILES["fileToUpload"]["name"]);
 $target_file = $target_dir . $file_name;
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
