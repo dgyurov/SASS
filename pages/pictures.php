@@ -1,11 +1,8 @@
 <div class="row">
 
     <?php
-    if(isset($_GET['saved'])) {
-        echo '<div class="alert alert-success saved"><strong> Well done.</strong> You successfully uploaded a picture.</div>';
-    }
-    if(isset($_GET['comment'])) {
-        echo '<div class="alert alert-success saved"><strong> Well done.</strong> You successfully shared the picture.</div>';
+    if(isset($_GET['resource'])) {
+        echo '<div class="alert alert-success saved"><strong> Well done.</strong> ' . urldecode($_GET['resource']) . '</div>';
     }
     if(isset($_GET['error'])) {
         echo '<div class="alert alert-danger saved"><strong> Oh snap!.</strong> Something went wrong! ' . urldecode($_GET['error']) . '</div>';
@@ -24,6 +21,10 @@
             height: 110px;
             overflow-y: scroll;
         }
+        .comments-shared {
+            height: 170px;
+            overflow-y: scroll;
+        }
     </style>
 
     <?php
@@ -39,22 +40,28 @@
         echo '<h4>Comments</h4>';
         echo '<div class="comments">';
         $i = 1;
-        $comments = Qry::q('SELECT id, text, created FROM picture_comments WHERE picture_id=' . $picture['id']. ' ORDER BY created');
+        $comments = Qry::q('SELECT pc.text, pc.created, pc.commentor_id, u.email
+                            FROM picture_comments pc
+                            INNER JOIN users u
+                              ON pc.commentor_id = u.id
+                            WHERE picture_id=' . $picture['id']. '
+                            ORDER BY pc.created');
+
         foreach($comments as $comment) {
-            echo '<p>'.$i++.'. '.$comment['text'].' <i style="font-size: 10px;">'.$comment['created'].'</i></p>';
+            echo '<p>'.$i++.'. '.$comment['text'].' - <a>'.$comment['email'].'</a> <i style="font-size: 10px; color: gray;">'.date("jS M Y",strtotime($comment['created'])).' at '.date("H:i",strtotime($comment['created'])).'</i></p>';
         }
         echo '</div>';
         ?>
-        <form id="add-comment" class="form-horizontal" action="#" method="post">
+        <form id="add-comment" class="form-horizontal" action="backend/comment.php" method="post">
             <div class="form-group">
                 <div class="col-md-9">
-                    <input id="company-name" name="company-name" type="text" placeholder="Add comment..." class="form-control required">
+                    <input id="comment" name="comment" type="text" placeholder="Add comment..." class="form-control required">
                 </div>
-                <a href="#" class="btn btn-default btn-s" role="button">Add</a>
+                <button type="submit" name="submit" value="<?php echo $picture['id'] ?>" class="btn btn-default btn-sm">Add</button>
             </div>
         </form>
         <hr>
-        <form id="data-view" class="form-horizontal" action="backend/share.php" method="get">
+        <form id="data-view" class="form-horizontal" action="backend/share.php" method="post">
             <div class="form-group col-md-12">
                 <div class="col-md-8">
                     <select class="form-control" name="s">
@@ -102,26 +109,32 @@
                                         WHERE ps.shared_with_id=' . $_SESSION["login"]['id']);
 
     $path = 'backend/uploads/';
-    foreach ($othersPictures as $user) {
+    foreach ($othersPictures as $picture) {
         echo '<div class="col-sm-6 col-md-4">';
         echo '<div class="thumbnail">';
-        echo '<img src="backend/uploads/'.$user['picture'].'" alt="..." style="width: 330px; height: 200px;">';
+        echo '<img src="backend/uploads/'.$picture['picture'].'" alt="..." style="width: 330px; height: 200px;">';
         echo '<div class="caption">';
         echo '<h4>Comments</h4>';
-        echo '<div class="comments">';
+        echo '<div class="comments-shared">';
         $i = 1;
-        $comment = Qry::q('SELECT id, text, created FROM picture_comments WHERE picture_id=' . $user['id']. ' ORDER BY created');
-        foreach($comment as $user) {
-            echo '<p>'.$i++.'. '.$user['text'].' <i style="font-size: 10px;">'.$user['created'].'</i></p>';
+        $comments = Qry::q('SELECT pc.text, pc.created, pc.commentor_id, u.email
+                            FROM picture_comments pc
+                            INNER JOIN users u
+                              ON pc.commentor_id = u.id
+                            WHERE picture_id=' . $picture['id']. '
+                            ORDER BY pc.created');
+
+        foreach($comments as $comment) {
+            echo '<p>'.$i++.'. '.$comment['text'].' - <a>'.$comment['email'].'</a> <i style="font-size: 10px; color: gray;">'.date("jS M Y",strtotime($comment['created'])).' at '.date("h:m",strtotime($comment['created'])).'</i></p>';
         }
         echo '</div>';
         ?>
-        <form id="add-comment" class="form-horizontal" action="#" method="post">
+        <form id="add-comment" class="form-horizontal" action="backend/comment.php" method="post">
             <div class="form-group">
                 <div class="col-md-9">
-                    <input id="company-name" name="company-name" type="text" placeholder="Add comment..." class="form-control required">
+                    <input id="comment" name="comment" type="text" placeholder="Add comment..." class="form-control required">
                 </div>
-                <a href="#" class="btn btn-default btn-s" role="button">Add</a>
+                <button type="submit" name="submit" value="<?php echo $picture['id'] ?>" class="btn btn-default btn-sm">Add</button>
             </div>
         </form>
         <?php

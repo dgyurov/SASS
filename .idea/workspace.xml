@@ -2,48 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="859ca9f0-4fb1-4012-853f-1543e405ca3a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/home.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/securitay.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426530352GwyBzG3 (1).jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426530352GwyBzG3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426530847GwyBzG3 (1).jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426530847GwyBzG3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426530872GwyBzG3 (1).jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426530872GwyBzG3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426532056GwyBzG3 (1).jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426532056GwyBzG3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426536849GwyBzG3 (1).jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426536849GwyBzG3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426536870GwyBzG3 (1).jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426536870GwyBzG3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426536958GwyBzG3 (1).jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426536958GwyBzG3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426536982GwyBzG3 (1).jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426536982GwyBzG3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426537028GwyBzG3 (1).jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426537028GwyBzG3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426537071GwyBzG3 (1).jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426537071GwyBzG3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426537159GwyBzG3 (1).jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426537159GwyBzG3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426537302GwyBzG3 (1).jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426537302GwyBzG3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426542421background (1).jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426542421background.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\1426584110Class diagram jUnit.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\GwyBzG3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\_htaccess (1)" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\a9LYOg0_700b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\background.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\securitay\backend\uploads\sAl3Kht.jpg" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/comment.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/pictures.php" afterPath="$PROJECT_DIR$/pages/pictures.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/security.sql" afterPath="$PROJECT_DIR$/security.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/share.php" afterPath="$PROJECT_DIR$/backend/share.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upload-image.php" afterPath="$PROJECT_DIR$/backend/upload-image.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="securitay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,72 +33,7 @@
     <favorites_list name="securitay" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="pictures.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/pictures.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-60.153847" vertical-offset="0" max-vertical-offset="2312">
-              <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
-              <folding>
-                <marker date="1426704878899" expanded="true" signature="873:921" placeholder="SELECT id, p..pictures..." />
-                <marker date="1426704878899" expanded="true" signature="1351:1453" placeholder="SELECT id, t..picture_comments..." />
-                <marker date="1426704878899" expanded="true" signature="1560:1576" placeholder="..." />
-                <marker date="1426704878899" expanded="true" signature="2412:2439" placeholder="SELECT id, e..users..." />
-                <marker date="1426704878899" expanded="true" signature="3464:3877" placeholder="SELECT p.id,..pictures..." />
-                <marker date="1426704878899" expanded="true" signature="4336:4435" placeholder="SELECT id, t..picture_comments..." />
-                <marker date="1426704878899" expanded="true" signature="4535:4551" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7615708" vertical-offset="1803" max-vertical-offset="2567">
-              <caret line="138" column="8" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
-              <folding>
-                <marker date="1426707336209" expanded="true" signature="698:760" placeholder="SELECT id, e..users..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/home.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="187">
-              <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Qry.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/Qry.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="20.26923" vertical-offset="527" max-vertical-offset="1853">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1426704326855" expanded="true" signature="2591:2646" placeholder="INSERT INTO ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="upload-image.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/upload-image.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="1173">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-              <folding>
-                <marker date="1426705005154" expanded="true" signature="1668:1763" placeholder="INSERT INTO ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -140,11 +41,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/login.php" />
-        <option value="$PROJECT_DIR$/pages/pictures.php" />
-        <option value="$PROJECT_DIR$/backend/upload-image.php" />
-        <option value="$PROJECT_DIR$/pages/home.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/pages/home.php" />
+        <option value="$PROJECT_DIR$/backend/share.php" />
+        <option value="$PROJECT_DIR$/backend/upload-image.php" />
+        <option value="$PROJECT_DIR$/backend/comment.php" />
+        <option value="$PROJECT_DIR$/pages/pictures.php" />
+        <option value="$PROJECT_DIR$/security.sql" />
       </list>
     </option>
   </component>
@@ -227,24 +131,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="securitay" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="securitay" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uploads" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -291,7 +177,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -299,7 +185,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -335,72 +221,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6900421" vertical-offset="936" max-vertical-offset="1649">
-          <caret line="84" column="82" selection-start-line="84" selection-start-column="82" selection-end-line="84" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/signup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38008416" vertical-offset="834" max-vertical-offset="1547">
           <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/share.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="739">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1426703175760" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upload-image.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="1173">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <marker date="1426705005154" expanded="true" signature="1668:1763" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/pictures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-60.153847" vertical-offset="0" max-vertical-offset="2312">
-          <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
-          <folding>
-            <marker date="1426704878899" expanded="true" signature="873:921" placeholder="SELECT id, p..pictures..." />
-            <marker date="1426704878899" expanded="true" signature="1351:1453" placeholder="SELECT id, t..picture_comments..." />
-            <marker date="1426704878899" expanded="true" signature="1560:1576" placeholder="..." />
-            <marker date="1426704878899" expanded="true" signature="2412:2439" placeholder="SELECT id, e..users..." />
-            <marker date="1426704878899" expanded="true" signature="3464:3877" placeholder="SELECT p.id,..pictures..." />
-            <marker date="1426704878899" expanded="true" signature="4336:4435" placeholder="SELECT id, t..picture_comments..." />
-            <marker date="1426704878899" expanded="true" signature="4535:4551" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/Qry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="20.26923" vertical-offset="527" max-vertical-offset="1853">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1426704326855" expanded="true" signature="2591:2646" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="187">
-          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -413,12 +237,94 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40392706" vertical-offset="69" max-vertical-offset="1598">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.071528755" vertical-offset="0" max-vertical-offset="713">
+          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/Qry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.42917252" vertical-offset="306" max-vertical-offset="1853">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1426704326855" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upload-image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66619915" vertical-offset="460" max-vertical-offset="1173">
+          <caret line="58" column="120" selection-start-line="58" selection-start-column="120" selection-end-line="58" selection-end-column="120" />
+          <folding>
+            <marker date="1426712649543" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/share.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19074334" vertical-offset="0" max-vertical-offset="713">
+          <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+          <folding>
+            <marker date="1426712526279" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7615708" vertical-offset="1803" max-vertical-offset="2567">
-          <caret line="138" column="8" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
+        <state vertical-scroll-proportion="-1.9615384" vertical-offset="68" max-vertical-offset="2431">
+          <caret line="7" column="66" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53120464" vertical-offset="1691" max-vertical-offset="2720">
+          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26714286" vertical-offset="0" max-vertical-offset="700">
+          <caret line="11" column="113" selection-start-line="11" selection-start-column="113" selection-end-line="11" selection-end-column="113" />
           <folding>
-            <marker date="1426707336209" expanded="true" signature="698:760" placeholder="SELECT id, e..users..." />
+            <marker date="1426713530470" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1426713530470" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1426713530470" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1426713530470" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/pictures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46571428" vertical-offset="1765" max-vertical-offset="2533">
+          <caret line="123" column="60" selection-start-line="123" selection-start-column="60" selection-end-line="123" selection-end-column="60" />
+          <folding>
+            <marker date="1426713641040" expanded="true" signature="-1:-1" placeholder="SELECT id, p..pictures..." />
+            <marker date="1426713641040" expanded="true" signature="-1:-1" placeholder="SELECT pc.te..picture_comments..." />
+            <marker date="1426713641040" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1426713641040" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1426713641040" expanded="true" signature="-1:-1" placeholder="SELECT id, e..users..." />
+            <marker date="1426713641040" expanded="true" signature="-1:-1" placeholder="SELECT p.id,..pictures..." />
+            <marker date="1426713641040" expanded="true" signature="-1:-1" placeholder="SELECT pc.te..picture_comments..." />
+            <marker date="1426713641040" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>

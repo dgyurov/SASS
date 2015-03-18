@@ -19,7 +19,6 @@
 		  padding-bottom: 40px;
 		  background-color: #eee;
 		}
-		
 		.form-signin {
 		  max-width: 330px;
 		  padding: 15px;
@@ -54,12 +53,10 @@
 		  border-top-left-radius: 0;
 		  border-top-right-radius: 0;
 		}
-
 		.signup-message{
 			font-size: 14px;
 			font-weight: bold;
 		}
-
 		.container{
 			text-align: center;
 		}
@@ -86,7 +83,7 @@
         <button class="btn btn-lg btn-success btn-block" type="submit" name="submit">Login</button>
       </form>
 
-    </div> <!-- /container -->
+    </div>
 
   </body>
 </html>

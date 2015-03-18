@@ -30,14 +30,11 @@ if(isset($_POST['submit'])) {
         }
 	}
 }
-
 // Check if user logged in
 if(!$_SESSION["login"]["logged_in"]) {
 	header("Location: logout.php");
 	die;
 }
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -109,10 +106,9 @@ if(!$_SESSION["login"]["logged_in"]) {
           </ul>
         </div>
       </div>
-    </nav><!-- Fixed navbar END -->
+    </nav>
 
     <div class="container">
-        <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
             <h1>Picture Heaven</h1>
             <p>Do your worst...</p>
@@ -130,8 +126,6 @@ if(!$_SESSION["login"]["logged_in"]) {
         }
         ?>
     </div>
-
-
     <script>
 		$(function() {
 			$(document).ready(function() {
@@ -139,7 +133,5 @@ if(!$_SESSION["login"]["logged_in"]) {
 			});
 		});
 	</script>
-
-
   </body>
 </html>

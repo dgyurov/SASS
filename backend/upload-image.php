@@ -56,7 +56,7 @@ if ($uploadOk == 0) {
 		session_start();
 		$myPictures = Qry::qId('INSERT INTO pictures (picture, owner_id) VALUES ("'.$file_name.'",'.$_SESSION["login"]['id'].')');
 		
-		header('Location: ../index.php?page=pictures&saved=ok');
+		header('Location: ../index.php?page=pictures&resource=' . urlencode('The picture has been successfully uploaded.'));
 		die;
     } else {
         $error_message .= " Sorry, there was an error uploading your file.";
