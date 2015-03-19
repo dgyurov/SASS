@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="859ca9f0-4fb1-4012-853f-1543e405ca3a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/home.php" afterPath="$PROJECT_DIR$/pages/home.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/pictures.php" afterPath="$PROJECT_DIR$/pages/pictures.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/share.php" afterPath="$PROJECT_DIR$/backend/share.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upload-image.php" afterPath="$PROJECT_DIR$/backend/upload-image.php" />
     </list>
     <ignored path="securitay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,31 +42,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.576923" vertical-offset="1701" max-vertical-offset="2414">
-              <caret line="130" column="36" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="36" />
-              <folding>
-                <marker date="1426717053331" expanded="true" signature="698:760" placeholder="SELECT id, e..users..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pictures.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/pictures.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8257143" vertical-offset="0" max-vertical-offset="2873">
-              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+            <state vertical-scroll-proportion="-1.7" vertical-offset="1904" max-vertical-offset="2873">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
-                <marker date="1426717286013" expanded="true" signature="1022:1070" placeholder="SELECT id, p..pictures..." />
-                <marker date="1426717286013" expanded="true" signature="1567:1594" placeholder="SELECT id, e..users..." />
-                <marker date="1426717286013" expanded="true" signature="2496:2819" placeholder="SELECT pc.te..picture_comments..." />
-                <marker date="1426717286013" expanded="true" signature="2958:2987" placeholder="..." />
-                <marker date="1426717286013" expanded="true" signature="4043:4456" placeholder="SELECT p.id,..pictures..." />
-                <marker date="1426717286013" expanded="true" signature="4929:5252" placeholder="SELECT pc.te..picture_comments..." />
-                <marker date="1426717286013" expanded="true" signature="5391:5420" placeholder="..." />
+                <marker date="1426752878481" expanded="true" signature="1022:1070" placeholder="SELECT id, p..pictures..." />
+                <marker date="1426752878481" expanded="true" signature="1122:1149" placeholder="SELECT id, e..users..." />
+                <marker date="1426752878481" expanded="true" signature="2476:2799" placeholder="SELECT pc.te..picture_comments..." />
+                <marker date="1426752878481" expanded="true" signature="2938:2967" placeholder="..." />
+                <marker date="1426752878481" expanded="true" signature="4023:4436" placeholder="SELECT p.id,..pictures..." />
+                <marker date="1426752878481" expanded="true" signature="4909:5232" placeholder="SELECT pc.te..picture_comments..." />
+                <marker date="1426752878481" expanded="true" signature="5371:5400" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -75,12 +63,35 @@
       <file leaf-file-name="share.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/share.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="340">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="425">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
               <folding>
-                <marker date="1426717020467" expanded="true" signature="136:254" placeholder="INSERT INTO ..." />
-                <marker date="1426717020467" expanded="true" signature="305:338" placeholder="SELECT name ..users..." />
+                <marker date="1426752860752" expanded="true" signature="184:219" placeholder="SELECT id FR..picture_shared..." />
+                <marker date="1426752860752" expanded="true" signature="249:367" placeholder="INSERT INTO ..." />
+                <marker date="1426752860752" expanded="true" signature="418:451" placeholder="SELECT name ..users..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.769231" vertical-offset="1599" max-vertical-offset="2312">
+              <caret line="109" column="3" selection-start-line="109" selection-start-column="3" selection-end-line="109" selection-end-column="3" />
+              <folding>
+                <marker date="1426751550554" expanded="true" signature="698:760" placeholder="SELECT id, e..users..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="289">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,12 +105,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/login.php" />
-        <option value="$PROJECT_DIR$/pages/home.php" />
         <option value="$PROJECT_DIR$/backend/comment.php" />
         <option value="$PROJECT_DIR$/security.sql" />
         <option value="$PROJECT_DIR$/backend/upload-image.php" />
-        <option value="$PROJECT_DIR$/backend/share.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/pages/home.php" />
+        <option value="$PROJECT_DIR$/backend/share.php" />
         <option value="$PROJECT_DIR$/pages/pictures.php" />
       </list>
     </option>
@@ -315,14 +326,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.071528755" vertical-offset="0" max-vertical-offset="713">
-          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/Qry.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.42917252" vertical-offset="306" max-vertical-offset="1853">
@@ -364,39 +367,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/share.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="340">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state vertical-scroll-proportion="-9.769231" vertical-offset="1599" max-vertical-offset="2312">
+          <caret line="109" column="3" selection-start-line="109" selection-start-column="3" selection-end-line="109" selection-end-column="3" />
           <folding>
-            <marker date="1426717020467" expanded="true" signature="136:254" placeholder="INSERT INTO ..." />
-            <marker date="1426717020467" expanded="true" signature="305:338" placeholder="SELECT name ..users..." />
+            <marker date="1426751550554" expanded="true" signature="698:760" placeholder="SELECT id, e..users..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/pages/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.576923" vertical-offset="1701" max-vertical-offset="2414">
-          <caret line="130" column="36" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="36" />
+        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="289">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/share.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="425">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
           <folding>
-            <marker date="1426717053331" expanded="true" signature="698:760" placeholder="SELECT id, e..users..." />
+            <marker date="1426752860752" expanded="true" signature="184:219" placeholder="SELECT id FR..picture_shared..." />
+            <marker date="1426752860752" expanded="true" signature="249:367" placeholder="INSERT INTO ..." />
+            <marker date="1426752860752" expanded="true" signature="418:451" placeholder="SELECT name ..users..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/pictures.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8257143" vertical-offset="0" max-vertical-offset="2873">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        <state vertical-scroll-proportion="-1.7" vertical-offset="1904" max-vertical-offset="2873">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
-            <marker date="1426717286013" expanded="true" signature="1022:1070" placeholder="SELECT id, p..pictures..." />
-            <marker date="1426717286013" expanded="true" signature="1567:1594" placeholder="SELECT id, e..users..." />
-            <marker date="1426717286013" expanded="true" signature="2496:2819" placeholder="SELECT pc.te..picture_comments..." />
-            <marker date="1426717286013" expanded="true" signature="2958:2987" placeholder="..." />
-            <marker date="1426717286013" expanded="true" signature="4043:4456" placeholder="SELECT p.id,..pictures..." />
-            <marker date="1426717286013" expanded="true" signature="4929:5252" placeholder="SELECT pc.te..picture_comments..." />
-            <marker date="1426717286013" expanded="true" signature="5391:5420" placeholder="..." />
+            <marker date="1426752878481" expanded="true" signature="1022:1070" placeholder="SELECT id, p..pictures..." />
+            <marker date="1426752878481" expanded="true" signature="1122:1149" placeholder="SELECT id, e..users..." />
+            <marker date="1426752878481" expanded="true" signature="2476:2799" placeholder="SELECT pc.te..picture_comments..." />
+            <marker date="1426752878481" expanded="true" signature="2938:2967" placeholder="..." />
+            <marker date="1426752878481" expanded="true" signature="4023:4436" placeholder="SELECT p.id,..pictures..." />
+            <marker date="1426752878481" expanded="true" signature="4909:5232" placeholder="SELECT pc.te..picture_comments..." />
+            <marker date="1426752878481" expanded="true" signature="5371:5400" placeholder="..." />
           </folding>
         </state>
       </provider>

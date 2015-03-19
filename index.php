@@ -108,12 +108,6 @@ if(!$_SESSION["login"]["logged_in"]) {
     </nav>
 
     <div class="container">
-        <div class="jumbotron">
-            <h1>Picture Heaven</h1>
-            <p>Do your worst...</p>
-        </div>
-    </div>
-    <div class="container">
         <?php
         $path = 'pages/';
         if(isset($_GET['page']) && !empty($_GET['page'])) {

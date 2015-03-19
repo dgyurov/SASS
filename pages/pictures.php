@@ -40,6 +40,7 @@
     include_once('backend/Qry.php');
 
     $myPictures = Qry::q('SELECT id, picture FROM pictures WHERE owner_id=' . $_SESSION["login"]['id']);
+    $share = Qry::q('SELECT id, email FROM users');
 
     foreach ($myPictures as $picture) {
         echo '<div class="col-sm-6 col-md-4">';
@@ -51,7 +52,6 @@
                     <select class="form-control share-picture" name="s">
                         <?php
 
-                        $share = Qry::q('SELECT id, email FROM users');
                         foreach ($share as $user) {
                             if($user['email'] != $_SESSION['login']['email']) {
                                 echo '<option value="'.$user['id'].'">'.$user['email'].'</option>';
