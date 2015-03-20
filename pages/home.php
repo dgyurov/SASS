@@ -4,9 +4,19 @@
         <p>Do your worst...</p>
     </div>
 </div>
-<h1>Welcome</h1>
-<p>These are your options</p>
-<p>
-    <ul><a href="index.php?page=pictures">Picture gallery</a></ul>
-    <ul><a href="index.php?page=upload">Upload picture</a></ul>
-</p>
+<h3>These are you options</h3><br>
+
+<div class="list-group col-md-8">
+    <a href="index.php?page=pictures" class="list-group-item">
+        <h4 class="list-group-item-heading">Picture gallery</h4>
+        <p class="list-group-item-text">Here you can view, comment and share your pictures</p>
+    </a>
+    <a href="index.php?page=upload" class="list-group-item">
+        <h4 class="list-group-item-heading">Upload new pictures</h4>
+        <p class="list-group-item-text">Here you can upload new pictures in these formats: JPG, JPEG, PNG & GIF</p>
+    </a>
+    <a href="logout.php" class="list-group-item">
+        <h4 class="list-group-item-heading">Log out</h4>
+        <p class="list-group-item-text">When you are done please log out</p>
+    </a>
+</div>

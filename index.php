@@ -52,9 +52,8 @@ if(!$_SESSION["login"]["logged_in"]) {
 	<link rel="stylesheet" href="resources/style/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="resources/style/carousel.css" rel="stylesheet">
-    <link href="resources/style/lightbox.css" rel="stylesheet" />
-    
+      <link rel="stylesheet" href="resources/style/carousel.css" />
+      <link rel="stylesheet" href="resources/style/bootstrap-glyphicons.css" />
     <style>
     	body {
 		  padding-top: 70px;

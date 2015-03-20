@@ -34,6 +34,7 @@
             padding: 0px 12px;
             margin-bottom: 0px;
         }
+
     </style>
 
     <?php
@@ -43,20 +44,19 @@
     $share = Qry::q('SELECT id, email FROM users');
 
     foreach ($myPictures as $picture) {
-        echo '<div class="col-sm-6 col-md-4">';
-        echo '<div class="thumbnail">';
         ?>
+        <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
         <form id="data-view" class="form-horizontal" action="backend/share.php" method="post">
             <div class="form-group col-md-12">
                 <div class="col-md-8">
                     <select class="form-control share-picture" name="s">
                         <?php
-
-                        foreach ($share as $user) {
-                            if($user['email'] != $_SESSION['login']['email']) {
-                                echo '<option value="'.$user['id'].'">'.$user['email'].'</option>';
+                            foreach ($share as $user) {
+                                if($user['email'] != $_SESSION['login']['email']) {
+                                    echo '<option value="'.$user['id'].'">'.$user['email'].'</option>';
+                                }
                             }
-                        }
                         ?>
                     </select>
                 </div>
@@ -65,46 +65,36 @@
                 </div>
             </div>
         </form>
-        <?php
-        echo '<img src="backend/uploads/'.$picture['picture'].'" alt="..." style="width: 330px; height: 200px;">';
-        echo '<div class="caption">';
-        echo '<h4>Comments</h4>';
-        echo '<div class="comments">';
-        $i = 1;
-        $comments = Qry::q('SELECT pc.text, pc.created, pc.commentor_id, u.email
-                            FROM picture_comments pc
-                            INNER JOIN users u
-                              ON pc.commentor_id = u.id
-                            WHERE picture_id=' . $picture['id']. '
-                            ORDER BY pc.created');
-
-        foreach($comments as $comment) {
-            echo '<p>'.$i++.'. '.$comment['text'].' - <a>'.$comment['email'].'</a> <i style="font-size: 10px; color: gray;">'.date("jS M Y",strtotime($comment['created'])).' at '.date("H:i",strtotime($comment['created'])).'</i></p>';
-        }
-        echo '</div>';
-        ?>
-        <form id="add-comment" class="form-horizontal" action="backend/comment.php" method="post">
-            <div class="form-group">
-                <div class="col-md-9">
-                    <input id="comment" name="comment" type="text" placeholder="Add comment..." class="form-control required">
-                </div>
-                <button type="submit" name="submit" value="<?php echo $picture['id'] ?>" class="btn btn-primary btn-sm">Add</button>
+        <img src="backend/uploads/<?php echo $picture['picture']; ?>" alt="..." style="width: 330px; height: 200px;">
+        <div class="caption">
+            <h4>Comments</h4>
+            <div class="comments">
+            <?php
+                $comments = Qry::q('SELECT pc.text, pc.created, pc.commentor_id, u.email
+                                    FROM picture_comments pc
+                                    INNER JOIN users u
+                                      ON pc.commentor_id = u.id
+                                    WHERE picture_id=' . $picture['id']. '
+                                    ORDER BY pc.created');
+                $i = 1;
+                foreach($comments as $comment) {
+                    echo '<p>'.$i++.'. '.$comment['text'].' - <a>'.$comment['email'].'</a> <i style="font-size: 10px; color: gray;">'.date("jS M Y",strtotime($comment['created'])).' at '.date("H:i",strtotime($comment['created'])).'</i></p>';
+                }
+            ?>
             </div>
-        </form>
-        <?php
-        echo '</div></div></div>';
-    }
+            <form id="add-comment" class="form-horizontal" action="backend/comment.php" method="post">
+                <div class="form-group">
+                    <div class="col-md-9">
+                        <input id="comment" name="comment" type="text" placeholder="Add comment..." class="form-control required">
+                    </div>
+                    <button type="submit" name="submit" value="<?php echo $picture['id'] ?>" class="btn btn-primary btn-sm">Add</button>
+                </div>
+            </form>
+        </div></div></div>
 
-    ?>
+    <?php } ?>
 
-    <script>
-        $(document).ready(function() {
-            $("#share_1").click(function(){
-                //console.log('hi from button.');
-                //alert('hi from button');
-            });
-        });
-    </script>
+
 </div>
 <div class="row">
     <h1>Picture gallery - shared with me</h1>
