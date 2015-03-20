@@ -89,14 +89,14 @@ if(!$_SESSION["login"]["logged_in"]) {
 
     <div class="container">
         <?php
-        $path = 'pages/';
-        if(isset($_GET['page']) && !empty($_GET['page'])) {
-            if(file_exists($path . $_GET['page']) . '.php') {
-                include_once($path . $_GET['page'] . '.php');
+            $path = 'pages/';
+            if(isset($_GET['page']) && !empty($_GET['page'])) {
+                if(file_exists($path . $_GET['page']) . '.php') {
+                    include_once($path . $_GET['page'] . '.php');
+                }
+            } else {
+                include_once('pages/home.php');
             }
-        } else {
-            include_once('pages/home.php');
-        }
         ?>
     </div>
     <script>
