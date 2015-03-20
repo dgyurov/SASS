@@ -1,3 +1,35 @@
+<?php
+
+session_start();
+
+if(isset($_POST['submit'])) {
+
+    // Login
+    if(isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['password']) && !empty($_POST['password'])) {
+        $email = trim($_POST['email']);
+        $password = trim($_POST['password']);
+
+        include_once('backend/Qry.php');
+        $result = Qry::q('SELECT id, email, password FROM users WHERE email="'.$email.'"');
+        $hashedPassFromDB = $result[0]['password'];
+
+        if (password_verify($password, $hashedPassFromDB)) {
+            $_SESSION["login"] = [ "logged_in" => TRUE, "email" => $email, "id" => $result[0]['id'] ];
+            header("Location: index.php");
+            die;
+        } else {
+            $_SESSION["wrongpass"] = true;
+            $_SESSION['message'] = 'Username/password incorrect!';
+            header("Location: logout.php");
+            die;
+        }
+    }
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -67,14 +99,23 @@
       <script src="resources/js/html5shiv.min.js"></script>
       <script src="resources/js/respond.min.js"></script>
     <![endif]-->
+      <script src="resources/js/jquery.min.js"></script>
   </head>
 
   <body>
 
     <div class="container">
 
-      <form class="form-signin" action="index.php" method="post">
+
+
+      <form class="form-signin" action="login.php" method="post">
         <h2 class="form-signin-heading">Please sign in</h2>
+          <?php
+              if(isset($_SESSION['message'])) {
+                  echo '<div class="alert alert-info message"><strong></strong> ' . $_SESSION['message'] . '</div>';
+              }
+              unset($_SESSION['message']);
+          ?>
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="email" name="email" id="email" class="form-control" placeholder="Email address" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
@@ -84,6 +125,14 @@
       </form>
 
     </div>
+
+    <script>
+        $(function() {
+            $(document).ready(function() {
+                $(".message").delay(5000).slideUp();
+            });
+        });
+    </script>
 
   </body>
 </html>

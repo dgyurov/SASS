@@ -1,3 +1,24 @@
+<?php
+
+session_start();
+
+if(isset($_POST['submit'])) {
+
+    // Create new user
+    if (isset($_POST['email-signup']) && !empty($_POST['email-signup']) && isset($_POST['password-signup']) && !empty($_POST['password-signup'])) {
+        $email = trim($_POST['email-signup']);
+        $password = trim($_POST['password-signup']);
+
+        include_once('backend/Qry.php');
+        $result = Qry::create_user($email, $password);
+        $_SESSION['message'] = 'Please login with your new user.';
+        header('Location: login.php');
+        die;
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -70,7 +91,7 @@
 
     <div class="container">
 
-      <form class="form-signin" action="index.php" method="post">
+      <form class="form-signin" action="signup.php" method="post">
         <h2 class="form-signin-heading">Sign up for free!</h2>
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="email" name="email-signup" id="email-signup" class="form-control" placeholder="Email address" required autofocus>
