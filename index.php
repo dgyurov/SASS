@@ -3,6 +3,14 @@ error_reporting(0); // add this before handin
 
 session_start();
 
+// Session hijacking prevention.
+// Checks if the IP address in the request is the same as the IP from the login.
+include_once('backend/getip.php');
+if(getUserIP() != $_SESSION['login']['ip']) {
+    header("Location: logout.php");
+    die;
+}
+
 // Check if user logged in
 if(!$_SESSION["login"]["logged_in"]) {
 	header("Location: logout.php");
@@ -18,7 +26,7 @@ if(!$_SESSION["login"]["logged_in"]) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MyGur</title>
+    <title><?php echo $_SESSION['login']['email'] ?></title>
 
     <!-- Bootstrap core CSS -->
 	<!-- Latest compiled and minified CSS -->

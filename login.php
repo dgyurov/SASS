@@ -14,7 +14,8 @@ if(isset($_POST['submit'])) {
         $hashedPassFromDB = $result[0]['password'];
 
         if (password_verify($password, $hashedPassFromDB)) {
-            $_SESSION["login"] = [ "logged_in" => TRUE, "email" => $email, "id" => $result[0]['id'] ];
+            include_once('backend/getip.php');
+            $_SESSION["login"] = [ "logged_in" => TRUE, "email" => $email, "id" => $result[0]['id'], "ip" => getUserIP() ];
             header("Location: index.php");
             die;
         } else {
