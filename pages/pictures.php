@@ -41,6 +41,7 @@
     include_once('backend/Qry.php');
     $path = 'resources/uploads/';
 
+
     $myPictures = Qry::q('SELECT id, picture FROM pictures WHERE owner_id=' . $_SESSION["login"]['id']);
     $share = Qry::q('SELECT id, email FROM users');
 
@@ -129,7 +130,7 @@
         }
         ?>
         </div>
-        <form id="add-comment" class="form-horizontal" action="backend/comment.php" method="post">
+        <form id="add-comment" class="form-horizontal" action="backend/comment-shared.php" method="post">
             <div class="form-group">
                 <div class="col-md-9">
                     <input id="comment" name="comment" type="text" placeholder="Add comment..." class="form-control required">

@@ -2,13 +2,14 @@
 
 if(isset($_POST['submit']) && !empty($_POST['submit'])) {
     if(isset($_POST['comment']) && !empty($_POST['comment'])) {
+
         include_once('Qry.php');
         session_start();
         $picture_id = trim($_POST['submit']);
-        $check = Qry::q('SELECT id FROM pictures WHERE owner_id=' . $_SESSION['login']['id']);
+        $check = Qry::q('SELECT picture_id FROM picture_shared WHERE shared_with_id=' . $_SESSION['login']['id']);
         $allow_comment = FALSE;
         foreach($check as $id) {
-            if($id['id'] == $picture_id) {
+            if($id['picture_id'] == $picture_id) {
                 $allow_comment = TRUE;
                 break;
             }
