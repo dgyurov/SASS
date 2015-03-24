@@ -108,7 +108,7 @@
                                         INNER JOIN users u
                                             ON p.owner_id = u.id
                                         WHERE ps.shared_with_id=' . $_SESSION["login"]['id']);
-
+    foreach ($othersPictures as $picture) {
 
         echo '<div class="col-sm-6 col-md-4">';
         echo '<div class="thumbnail">';
@@ -138,7 +138,7 @@
             </div>
         </form>
         </div></div></div>
-        <?php  echo "}" ?>
+        <?php  } ?>
     <script>
         $(function() {
             $(document).ready(function() {

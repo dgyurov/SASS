@@ -45,11 +45,9 @@ if ($uploadOk == 0) {
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
     	
-		// Save URL 'basename($_FILES["fileToUpload"]["name"])' to the database 'picture' table with owner set to email from session array
-		
 		include_once('Qry.php');
 		session_start();
-		$myPictures = Qry::qId('INSERT INTO pictures (picture, owner_id) VALUES ("'.$file_name.'",'.$_SESSION["login"]['id'].')');
+		$myPictures = Qry::qId('INSERT INTO pictures (picture, owner_id) VALUES ("'.$file_name.'",'.$_SESSION["login"]["id"].')');
 		
 		header('Location: ../index.php?page=pictures&resource=' . urlencode('The picture has been successfully uploaded.'));
 		die;
