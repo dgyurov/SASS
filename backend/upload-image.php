@@ -1,6 +1,6 @@
 <?php
 
-$target_dir = "uploads/";
+$target_dir = "../resources/uploads/";
 $file_name = md5(time()) . str_replace(" ", "_", basename($_FILES["fileToUpload"]["name"]));
 $target_file = $target_dir . $file_name;
 $uploadOk = 1;
@@ -22,9 +22,9 @@ if (file_exists($target_file)) {
     $uploadOk = 0;
 }
 
- // Check file size
-if ($_FILES["fileToUpload"]["size"] > 500000) {
-    $error_message .= "Sorry, your file is too large.";
+ // Check file size. 2 MB limit
+if ($_FILES["fileToUpload"]["size"] > 2097152) {
+    $error_message .= "Sorry, your file is too large. The limit is 2 MB";
     $uploadOk = 0;
 }
 
