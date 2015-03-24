@@ -1,5 +1,5 @@
 <?php
-error_reporting(0); // add this before handin
+//error_reporting(0); // add this before handin
 
 session_start();
 

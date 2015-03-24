@@ -39,6 +39,7 @@
 
     <?php
     include_once('backend/Qry.php');
+    $path = 'resources/uploads/';
 
     $myPictures = Qry::q('SELECT id, picture FROM pictures WHERE owner_id=' . $_SESSION["login"]['id']);
     $share = Qry::q('SELECT id, email FROM users');
@@ -65,7 +66,7 @@
                 </div>
             </div>
         </form>
-        <img src="backend/uploads/<?php echo $picture['picture']; ?>" alt="..." style="width: 330px; height: 200px;">
+        <img src="<?php echo $path . $picture['picture']; ?>" alt="..." style="width: 330px; height: 200px;">
         <div class="caption">
             <h4>Comments</h4>
             <div class="comments">
@@ -108,11 +109,10 @@
                                             ON p.owner_id = u.id
                                         WHERE ps.shared_with_id=' . $_SESSION["login"]['id']);
 
-    $path = 'backend/uploads/';
-    foreach ($othersPictures as $picture) {
+
         echo '<div class="col-sm-6 col-md-4">';
         echo '<div class="thumbnail">';
-        echo '<img src="backend/uploads/'.$picture['picture'].'" alt="..." style="width: 330px; height: 200px;">';
+        echo '<img src="'.$path.$picture['picture'].'" alt="..." style="width: 330px; height: 200px;">';
         echo '<div class="caption">';
         echo '<h4>Comments</h4>';
         echo '<div class="comments-shared">';
@@ -127,8 +127,8 @@
         foreach($comments as $comment) {
             echo '<p>'.$i++.'. '.$comment['text'].' - <a>'.$comment['email'].'</a> <i style="font-size: 10px; color: gray;">'.date("jS M Y",strtotime($comment['created'])).' at '.date("h:m",strtotime($comment['created'])).'</i></p>';
         }
-        echo '</div>';
         ?>
+        </div>
         <form id="add-comment" class="form-horizontal" action="backend/comment.php" method="post">
             <div class="form-group">
                 <div class="col-md-9">
@@ -137,10 +137,8 @@
                 <button type="submit" name="submit" value="<?php echo $picture['id'] ?>" class="btn btn-default btn-sm">Add</button>
             </div>
         </form>
-        <?php
-        echo '</div></div></div>';
-    }
-    ?>
+        </div></div></div>
+        <?php  echo "}" ?>
     <script>
         $(function() {
             $(document).ready(function() {
