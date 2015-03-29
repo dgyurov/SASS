@@ -41,6 +41,7 @@
     include_once('backend/Qry.php');
     $path = 'resources/uploads/';
 
+
     $myPictures = Qry::q('SELECT id, picture FROM pictures WHERE owner_id=' . $_SESSION["login"]['id']);
     $share = Qry::q('SELECT id, email FROM users');
 
@@ -108,7 +109,7 @@
                                         INNER JOIN users u
                                             ON p.owner_id = u.id
                                         WHERE ps.shared_with_id=' . $_SESSION["login"]['id']);
-
+    foreach ($othersPictures as $picture) {
 
         echo '<div class="col-sm-6 col-md-4">';
         echo '<div class="thumbnail">';
@@ -129,7 +130,7 @@
         }
         ?>
         </div>
-        <form id="add-comment" class="form-horizontal" action="backend/comment.php" method="post">
+        <form id="add-comment" class="form-horizontal" action="backend/comment-shared.php" method="post">
             <div class="form-group">
                 <div class="col-md-9">
                     <input id="comment" name="comment" type="text" placeholder="Add comment..." class="form-control required">
@@ -138,7 +139,7 @@
             </div>
         </form>
         </div></div></div>
-        <?php  echo "}" ?>
+        <?php  } ?>
     <script>
         $(function() {
             $(document).ready(function() {
