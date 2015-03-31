@@ -8,11 +8,20 @@ if(isset($_POST['submit'])) {
     if (isset($_POST['email-signup']) && !empty($_POST['email-signup']) && isset($_POST['password-signup']) && !empty($_POST['password-signup'])) {
         $email = trim($_POST['email-signup']);
         $password = trim($_POST['password-signup']);
-
-        include_once('backend/Qry.php');
-        $result = Qry::create_user($email, $password);
-        $_SESSION['message'] = 'Please login with your new user.';
-        header('Location: login.php');
+        $pw_lenght = strlen($password);
+        if($pw_lenght >= 8) {
+            include_once('backend/Qry.php');
+            $result = Qry::create_user($email, $password);
+            $_SESSION['message'] = 'Please login with your new user.';
+            header('Location: login.php');
+            die;
+        } else {
+            $_SESSION['message'] = 'Password is to short! Must be 8 or more charters.';
+            header("Location: logout.php");
+        }
+    } else {
+        $_SESSION['message'] = 'Please fill in username and password!';
+        header("Location: logout.php");
         die;
     }
 }
